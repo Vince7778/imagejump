@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Image Jump!</title>
+	<meta charset="UTF-8">
+    </head>
+    <body id="bodyel">
+        <canvas id="canvs" style="border: 1px solid black">yeet</canvas>
+        <input type="file" onchange="previewFile()" autocomplete="off">
+        <canvas id="canvas2" style="display:none">yeet</canvas><br>
+        <input type="checkbox" onchange="toggleBW()" autocomplete="off" id="bwbox"> Draw Black and White<br>
+        <input type="checkbox" onchange="toggleReveal()" autocomplete="off" id="revealbox"> Reveal Area Around You (can be laggy)<br>
+        <input type="checkbox" onchange="toggleDJ()" autocomplete="off" checked=true> Double Jump<br>
+        <script src="getImageData.js"></script>
+        <script src="main.js"></script>
+        <script src="movement.js"></script>
+    </body>
+</html>
