@@ -80,12 +80,6 @@ function blackwhite() {
         }
     }
 
-    if (drawBW) {
-        ctx.drawImage(canvas2,0,0);
-    } else {
-        ctx.drawImage(image,0,0);
-    }
-
     if (!donedraw) {
         requestAnimationFrame(blackwhite);
     }
